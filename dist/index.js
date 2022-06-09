@@ -10,6 +10,4 @@ const routes = require("./routes");
 app.use(express_1.default.json());
 app.use(routes);
 app.use(handleMiddleware_1.default);
-app.listen(4000, () => {
-    console.log('"Servidor rodando na porta 4000"');
-});
+exports.default = app;
